@@ -10,37 +10,22 @@ import java.util.Stack;
 public class Main {
 
     public static void main(String[] args) {
-//        Queue<Integer> queue = new ArrayDeque<>();
-//        queue.add(10);
-//        queue.add(20);
-//        queue.add(30);
-//        queue.add(40);
-//        queue.remove();
-//        reverse(queue);
-//        System.out.println(queue);
-
-        ArrayQueue queue = new ArrayQueue(5);
+        QueueWithStack queue = new QueueWithStack();
+        queue.enqueue(10);
+        queue.enqueue(20);
+        queue.print();
+        System.out.println(queue.dequeue());
+        System.out.println(queue.dequeue());
         queue.enqueue(10);
         queue.enqueue(20);
         queue.enqueue(30);
-        queue.dequeue();
         queue.enqueue(40);
-//        System.out.println(queue.print());
-        queue.enqueue(50);
-        System.out.println(queue.print());
-        queue.enqueue(60);
-        System.out.println(queue.print());
-        queue.dequeue();
-        queue.dequeue();
-        queue.enqueue(70);
-        queue.enqueue(80);
-        queue.dequeue();
-        System.out.println(queue.print());
-//        queue.dequeue();
-//        queue.dequeue();
-//        System.out.println(queue.print());
-//        System.out.println(queue.dequeue());
-//        System.out.println(queue.print());
+        System.out.println(queue.dequeue());
+        System.out.println(queue.dequeue());
+        System.out.println(queue.dequeue());
+        System.out.println(queue.dequeue());
+        System.out.println(queue.dequeue());
+        queue.print();
 
 
 
