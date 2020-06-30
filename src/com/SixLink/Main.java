@@ -25,13 +25,22 @@ public class Main {
         queue.enqueue(30);
         queue.dequeue();
         queue.enqueue(40);
+//        System.out.println(queue.print());
         queue.enqueue(50);
+        System.out.println(queue.print());
         queue.enqueue(60);
+        System.out.println(queue.print());
+        queue.dequeue();
+        queue.dequeue();
+        queue.enqueue(70);
+        queue.enqueue(80);
+        queue.dequeue();
+        System.out.println(queue.print());
 //        queue.dequeue();
 //        queue.dequeue();
 //        System.out.println(queue.print());
 //        System.out.println(queue.dequeue());
-        System.out.println(queue.print());
+//        System.out.println(queue.print());
 
 
 
