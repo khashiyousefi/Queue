@@ -15,25 +15,21 @@ public class Main {
 //        queue.insert(1);
 //        queue.print();
         queue.insert(2);
-        queue.print();
         queue.insert(3);
-        queue.print();
         queue.insert(4);
+
         queue.print();
-        queue.insert(9);
+        System.out.println(queue.delete());
         queue.print();
-        queue.insert(7);
+        System.out.println(queue.delete());
         queue.print();
-        queue.insert(1);
-        queue.print();
-        queue.insert(6);
-        queue.print();
-        queue.insert(5);
-        queue.print();
-        queue.insert(8);
+        System.out.println(queue.delete());
         queue.print();
         queue.insert(10);
         queue.print();
+        queue.insert(5);
+        queue.print();
+
 
 
     }
