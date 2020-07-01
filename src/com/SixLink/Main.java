@@ -1,35 +1,26 @@
 package com.SixLink;
 
-import org.jetbrains.annotations.NotNull;
-
-import java.util.ArrayDeque;
-import java.util.Arrays;
-import java.util.Queue;
-import java.util.Stack;
+import java.util.*;
 
 public class Main {
 
     public static void main(String[] args) {
-
-        PriorityQueue queue = new PriorityQueue(5);
-//        queue.insert(1);
-//        queue.print();
-        queue.insert(2);
-        queue.insert(3);
-        queue.insert(4);
-
-        queue.print();
-        System.out.println(queue.delete());
-        queue.print();
-        System.out.println(queue.delete());
-        queue.print();
-        System.out.println(queue.delete());
-        queue.print();
-        queue.insert(10);
-        queue.print();
-        queue.insert(5);
-        queue.print();
-
+        Queue<Integer> queue = new ArrayDeque<>();
+        queue.add(10);
+        queue.add(20);
+        queue.add(30);
+        queue.add(40);
+        QueueReverser queueReverser = new QueueReverser(queue, 4);
+        var reversed = queueReverser.reverser();
+//        reversed.toString();
+        queueReverser.printReverse();
+//        System.out.println(queueReverser.print());
+//        System.out.println();
+//        System.out.println(getClass().getName()+"@" + Integer.toHexString(hashCode(reversed)));
+//        reversed.toString()
+//        var result = reversed.toString();
+//        queueReverser.print();
+//        System.out.println();
 
 
     }
@@ -43,9 +34,10 @@ public class Main {
         }
     }
 
-    public static void arrayReverse(Queue<Integer> queue){
-        while(!queue.isEmpty()){
-
-        }
-    }
+//    public static void arrayReverse(Queue<Integer> queue){
+//        while(!queue.isEmpty()){
+//
+//        }
+//
+//    }
 }
